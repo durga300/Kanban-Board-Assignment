@@ -1,4 +1,4 @@
-﻿﻿﻿﻿# Kanban Board Component
+﻿﻿﻿﻿﻿# Kanban Board Component
 
 A production-quality, fully functional Kanban Board View built with React, TypeScript, and Tailwind CSS. This implementation demonstrates enterprise-grade UI/UX patterns, performance optimization, and accessibility-first approach.
 
@@ -228,19 +228,44 @@ theme: {
 
 MIT
 
-## Deployment
+## Assignment Submission
 
-To deploy your Storybook and get a public preview link:
+For your assignment submission, you need to provide:
 
-1. **Easy Deployment** (recommended):
+1. **GitHub Repo Link**: Push this code to a public GitHub repository
+2. **Storybook Preview Link**: Deploy the Storybook to get a live preview
+
+### GitHub Repository Setup
+
+1. Create a new repository at https://github.com/new
+2. Name it "kanban-board-component"
+3. Make it Public
+4. Do NOT initialize with a README
+5. Connect your local repository:
    ```bash
-   npm run deploy-storybook
+   git remote add origin https://github.com/YOUR_USERNAME/kanban-board-component.git
+   git branch -M main
+   git push -u origin main
    ```
 
-2. **Manual Deployment**:
-   - The Storybook is pre-built in the `storybook-static` directory
-   - Simply upload this folder to any static hosting service
-   - Popular options: Vercel, Netlify, GitHub Pages
+### Storybook Deployment
+
+The Storybook is already built in the `storybook-static` directory.
+
+1. Deploy to Vercel:
+   ```bash
+   # Install Vercel CLI if you haven't
+   npm install -g vercel
+   
+   # Login to Vercel
+   vercel login
+   
+   # Deploy the Storybook
+   vercel storybook-static --prod
+   ```
+
+2. Follow the prompts to complete deployment
+3. Vercel will provide a public URL for your Storybook
 
 ## Author
 
